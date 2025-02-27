@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ilyes Azouani - Portfolio</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&display=swap">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+    </head>
+<body>
+    <div class="background-animation" id="particles-background"></div>
+    <div class="container">
+        <header>
+            <div class="profile">
+                <img src="images/social-icons/IMG_6676.jpg" alt="Ilyes Azouani" class="profile-pic">
+                <h1>Ilyes AZOUANI</h1>
+                <p class="bio">Hi, I am Ilyes, I'm a data scientist, focusing especially on computer vision and machine learning security.
+                    I am currently a computer vision engineer @ CLR Labs. I am preparing for a PhD position in machine learning cybersecuity.
+                </p>
+                <div class="social-links">
+                    <a href="https://github.com/Ilyes-Azni" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ilyes-azouani-52821724a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.kaggle.com/ilyesazouani" target="_blank"><i class="fab fa-kaggle"></i></a>
+                    <a href="https://medium.com/@ilyesazouani" target="_blank"><i class="fab fa-medium"></i></a>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Visualization between header and projects -->
+        <div class="visualization-container">
+            <canvas id="optimization-canvas"></canvas>
+        </div>
+        
+        <main>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <h3>Image Stats Toolbox</h3>
+                    <p>A full pythonic library to solve common problems in computer vision. A lot of software engineers suffer from building correct
+                        pipeline for deep learning training and inference using image data. This library eases the process of loading, cleaning, and building
+                        datasets for deep learning.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/Ilyes-Azni/image-stats-toolbox" target="_blank">GitHub <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <h3>Model inversion attack through GANs</h3>
+                    <p>GAN-Based Model Inversion Framework that extracts class information 
+                        from trained neural networks using generative adversarial networks. 
+                        Uses latent space optimization instead of pixel-space approaches to 
+                        generate realistic images that maximize target model confidence. Demonstrates privacy vulnerabilities across various model architectures 
+                        including image classifiers and deepfake detectors. This work was presented at 2025 AmuSec at CIRM in Marseille.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/yourusername/project2" target="_blank">GitHub <i class="fab fa-github"></i></a>
+                        <a href="https://medium.com/@yourusername/project2" target="_blank">Article <i class="fab fa-medium"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <h3>Sequance prediction for @HRFlow [WIP]</h3>
+                    <p>Following the challenge data from ENS, I am developping a sequence prediction model enabling the dynamic and intelligent job proposition to any job seeker
+                        I'll upload the implementation on github.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/yourusername/project3" target="_blank">GitHub <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© <span id="year"></span> AZOUANI ILYES. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
